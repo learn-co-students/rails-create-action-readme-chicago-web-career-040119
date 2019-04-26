@@ -40,3 +40,267 @@ Processing by PostsController#show as HTML
   [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered posts/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 27ms (Views: 10.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title Goes Here"], ["description", "Desc goes here..."], ["created_at", "2019-04-26 15:35:39.434676"], ["updated_at", "2019-04-26 15:35:39.434676"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+Started GET "/students/1" for ::1 at 2019-04-26 10:39:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/students/1"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/nicholasmoore/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/nicholasmoore/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/nicholasmoore/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.9ms)
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.0ms)
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (103.3ms)
+Started GET "/posts/new" for ::1 at 2019-04-26 10:39:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/posts/new"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/nicholasmoore/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/nicholasmoore/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/nicholasmoore/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.5ms)
+Started GET "/posts/new" for ::1 at 2019-04-26 10:39:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/posts/new"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/nicholasmoore/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/nicholasmoore/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/nicholasmoore/.rvm/rubies/ruby-2.4.4/lib/ruby/2.4.0/webrick/server.rb:308:in `block in start_thread'
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.5ms)
+Started GET "/posts/new" for ::1 at 2019-04-26 10:41:34 -0500
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 322ms (Views: 315.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-26 10:41:43 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6yw5iSzHAGigf+aYVIgzEwMuYiKfDDvD4A7upgleSZ7orI1Tc9HaBhTIyVgrG4kWAVHP62/hYrfelJOHND7nqw==", "title"=>"Title", "description"=>"Desc", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title"], ["description", "Desc"], ["created_at", "2019-04-26 15:41:43.190782"], ["updated_at", "2019-04-26 15:41:43.190782"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+No template found for PostsController#create, rendering head :no_content
+Completed 204 No Content in 122ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-04-26 10:43:24 -0500
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 14.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-26 10:43:30 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v4TKLaAovKzJbB9DGUo19ohPT/bBh5yRhNlx394Ib8O8BH73/z5mwn3bMINm2Y/zijDiPzFqxeW6Qwz+42jB9g==", "title"=>"New Ti", "description"=>"New De", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "New Ti"], ["description", "New De"], ["created_at", "2019-04-26 15:43:30.340725"], ["updated_at", "2019-04-26 15:43:30.340725"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `post_path' for #<PostsController:0x00007f996159ef00>
+Did you mean?  posts_path):
+  
+app/controllers/posts_controller.rb:19:in `create'
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (82.0ms)
+Started GET "/posts/new" for ::1 at 2019-04-26 10:44:52 -0500
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 21.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-26 10:44:55 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tc03GqBE8V8MTlWGUoOOIMj+IRuqMQqJpHaRPnIqZIBOTYPA/1IrMbj5ekYtEDQlyoGM0lrcU/2a7OwfT0rKtQ==", "title"=>"Title", "description"=>"fdsf", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Title"], ["description", "fdsf"], ["created_at", "2019-04-26 15:44:55.866928"], ["updated_at", "2019-04-26 15:44:55.866928"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.0ms)
+
+
+  
+NoMethodError (undefined method `post_path' for #<PostsController:0x00007f9961445280>
+Did you mean?  posts_path):
+  
+app/controllers/posts_controller.rb:19:in `create'
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.6ms)
+Started GET "/posts/new" for ::1 at 2019-04-26 10:46:20 -0500
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-26 10:46:23 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rOqkQdp1waWakAeOvUjvq++1q18mwR9KDfhPEVRjFHqvahCbhWMbyy4nKE7C21Wu7coGltYsRj4zYjIwaQO6Tw==", "title"=>"sdfs", "description"=>"dsf", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "sdfs"], ["description", "dsf"], ["created_at", "2019-04-26 15:46:23.415067"], ["updated_at", "2019-04-26 15:46:23.415067"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts.6
+Completed 302 Found in 4ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/posts.6" for ::1 at 2019-04-26 10:46:23 -0500
+Processing by PostsController#index as 
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 72ms (Views: 37.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts.6" for ::1 at 2019-04-26 10:46:47 -0500
+Processing by PostsController#index as 
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 86ms (Views: 59.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-04-26 10:46:49 -0500
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-26 10:46:53 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5o/kNpI29S1hMbpOfkR1fzlwZOJaI9BPMmQn2wXxpuXlD1DszSAvQ9WGlY4B1896Ow/JK6rOiTsM/lr6OJEI0A==", "title"=>"fdsf", "description"=>"sdf", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "fdsf"], ["description", "sdf"], ["created_at", "2019-04-26 15:46:53.220717"], ["updated_at", "2019-04-26 15:46:53.220717"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `post_path' for #<PostsController:0x00007f995fca0918>
+Did you mean?  posts_path):
+  
+app/controllers/posts_controller.rb:19:in `create'
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.2ms)
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendering /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/nicholasmoore/.rvm/gems/ruby-2.4.4/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.4ms)
+Started GET "/posts/new" for ::1 at 2019-04-26 10:50:39 -0500
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 16.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/posts" for ::1 at 2019-04-26 10:50:41 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xNHnrk5PBPgJlk+U6IqHxsSRJxpdmcrW/EfUk3jbA3XHUVN0EVnelr0hYFSXGT3Dxu6K0610k6LC3amyRbutQA==", "title"=>"fdsfdsf", "description"=>"dsfsddsf", "commit"=>"Submit Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "fdsfdsf"], ["description", "dsfsddsf"], ["created_at", "2019-04-26 15:50:41.799007"], ["updated_at", "2019-04-26 15:50:41.799007"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/8" for ::1 at 2019-04-26 10:50:41 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 14.9ms | ActiveRecord: 0.2ms)
+
+
